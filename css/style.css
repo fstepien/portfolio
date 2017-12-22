@@ -1,0 +1,78 @@
+body {
+  font-family: 'Open Sans', Sans Serif;
+  margin: 0px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+/* top of page */
+.main-header {
+  background-color: #333;
+  color: #fff;
+}
+.logo {
+   font-family: arial, sans-serif;
+   float: left;
+}
+
+nav {
+padding:1em;
+}
+
+nav ul{
+  color: white;
+  list-style: none;
+  padding: 0px;
+  float: right;
+}
+
+nav li {
+  display: inline;
+  padding-left: 2em;
+  height: 100%;
+}
+
+nav a, .main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: solid;
+}
+/* main body */
+
+#intro {
+  background:url(http://res.cloudinary.com/fstep/image/upload/v1512564102/background/Waves3_vu1txq.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  background-attachment: fixed;
+  min-height: 300px;
+  height: 50vh;
+}
+.box1 {
+  color: black;
+  text-align: center;
+  padding-top: 50px;
+}
+/* Main Footer */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+.links {
+  padding-right: 1em;
+}
+.main-footer i {
+
+  padding: 0.6em;
+}
+#link-row {
+  float: right;
+}
