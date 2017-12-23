@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', Sans Serif;
   margin: 0px;
+  background-color: #f6f6f6;
 }
 
 .container {
@@ -10,38 +11,58 @@ body {
 }
 /* top of page */
 .main-header {
-  background-color: #333;
-  color: #fff;
-}
-.logo {
-   font-family: arial, sans-serif;
-   float: left;
+  color: #333;
 }
 
 nav {
-padding:1em;
+padding: 0 1em;
+width: 80%;
+margin: auto;
+display: flex;
+justify-content: flex-end;
 }
 
 nav ul{
-  color: white;
   list-style: none;
   padding: 0px;
-  float: right;
+  position: fixed;
+
 }
 
 nav li {
   display: inline;
-  padding-left: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
   height: 100%;
+  text-align: center;
 }
-
-nav a, .main-footer a {
-  color: #fff;
+nav li:nth-child(1) {
+  display: none;
+}
+nav a{
   text-decoration: none;
+  color: #333;
+  font-size: 0.9em;
+  text-transform: uppercase;
 }
-
 nav a:hover {
+  /*color: #af43d6;
+  transition-duration: 0.7s;*/
   border-bottom: solid;
+  border-width: 1px;
+}
+@media(max-width: 600px){
+  nav ul{
+  position: relative;
+  margin-top: 5px;
+  color: red;
+  }
+  nav li {
+  padding: 0.1em;
+  height:1.5em;
+  display: block;
+  text-align: right;
+}
 }
 /* main body */
 
@@ -50,14 +71,35 @@ nav a:hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 30%;
-  background-attachment: fixed;
   min-height: 300px;
-  height: 50vh;
+  height: 100vh;
+  background-attachment: fixed;
 }
 .box1 {
   color: black;
   text-align: center;
   padding-top: 50px;
+}
+.box1 h1 {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  filter: drop-shadow(0em 0em 0.8em rgba(63, 63, 63, 0.9));
+  font-size: 3em;
+}
+/*About*/
+#about {
+  background-color: #ededed;
+}
+/*skills*/
+#skills {
+  background:url(http://res.cloudinary.com/fstep/image/upload/v1512564102/background/Waves3_vu1txq.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  min-height: 300px;
+  height: 40vh;
+  background-attachment: fixed;
 }
 /* Main Footer */
 .main-footer {
@@ -65,14 +107,20 @@ nav a:hover {
     color: #fff;
     padding: 20px;
     margin-top: 40px;
+    height: 1000px;
 }
-.links {
-  padding-right: 1em;
-}
-.main-footer i {
 
+.main-footer i {
   padding: 0.6em;
 }
 #link-row {
   float: right;
+}
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+#link-row a:hover {
+  color: #999999;
+  transition-duration: 0.5s;
 }
