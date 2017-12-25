@@ -199,6 +199,17 @@ height: auto;
 #skills h2 {
   color: black;
 }
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  text-align: center;
+  color: #111;
+}
+.skills-container i {
+  text-align: center;
+  
+}
 /* Main Footer */
 .main-footer {
     background-color: #333;
