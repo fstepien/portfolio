@@ -132,8 +132,11 @@ nav a:hover {
   display: inline-block;
   border-radius: 50%;
   width: 30vw;
+  max-width: 400px;
+  max-height: 400px;
   height: 30vw;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 .me-img {
 width: 100%;
@@ -144,6 +147,44 @@ filter: grayscale(0.75);
 #about .text {
 text-align: justify;
 margin: 0 0 20px 20px;
+align-self: center;
+}
+/*Portfolio******/
+.work-box {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.work-box img {
+width: 100%;
+max-width: 450px;
+height: auto;
+}
+.work-text {
+  text-align: justify;
+  margin-left: 20px;
+}
+.work-box:nth-child(odd) .work-text {
+  text-align: justify;
+  margin-right: 20px;
+}
+.work-box:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+@media(max-width: 750px){
+  .work-box {
+    flex-direction: column;
+  }
+  .work-box:nth-child(odd) {
+    flex-direction: column;
+  }
+  .work-box .work-text {
+    text-align: justify;
+    margin-left: 0px;
+  }
+  .work-box:nth-child(odd) .work-text {
+    text-align: justify;
+    margin-right: 0px;
+  }
 }
 /*skills*/
 #skills {
@@ -154,6 +195,9 @@ margin: 0 0 20px 20px;
   min-height: 300px;
   height: 40vh;
   background-attachment: fixed;
+}
+#skills h2 {
+  color: black;
 }
 /* Main Footer */
 .main-footer {
@@ -170,11 +214,14 @@ margin: 0 0 20px 20px;
 #link-row {
   float: right;
 }
-.main-footer a {
+#link-row a {
   color: #fff;
   text-decoration: none;
 }
 #link-row a:hover {
   color: #999999;
   transition-duration: 0.5s;
+}
+#link-row a:visited {
+  color: #fff;
 }
