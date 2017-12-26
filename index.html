@@ -2,7 +2,6 @@
   <title>Filip Stepien | Web Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
   <link rel="stylesheet" href="css/font-mfizz.css">
   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css">-->
   <link rel="stylesheet" href="css/style.css">
@@ -115,51 +114,23 @@
 <section id="contact">
   <div class="container">
     <h2>Contact</h2>
-    <form>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">City</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputState">State</label>
-      <select id="inputState" class="form-control">
-        <option selected>Choose...</option>
-        <option>...</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputZip">Zip</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox"> Check me out
-      </label>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Sign in</button>
-</form>
+        <p class="alert">Your message has been sent.</p>
+        <form id="contact-form">
+          <p>
+            <label for="">Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label for="">Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p class="full">
+            <label for="">Message</label>
+            <textarea type="text" name="message" id="message" rows="5"></textarea>
+          </p>
+          <p class="full"><button id="submit">Submit</button></p>
+        </form>
+
   </div>
 </section>
 <footer class="main-footer">
@@ -176,4 +147,6 @@
   </div>
 
 </footer>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="main.js"></script>
 </body>
