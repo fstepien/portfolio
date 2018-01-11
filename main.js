@@ -33,3 +33,24 @@ function saveMessage(name, email, message){
     message: message
   });
 }
+
+
+//Home Nav
+
+document.addEventListener('scroll', homeNav);
+
+var intro = document.querySelector('#intro');
+var introHeight = getComputedStyle(intro).height.split('px')[0];
+var home = document.querySelector('nav').children[0].children[0];
+console.log(home);
+console.log(introHeight);
+
+
+function homeNav(e) {
+  if(window.pageYOffset > introHeight){
+    home.style.display = "inline-block";
+  }
+  if(window.pageYOffset < introHeight){
+    home.style.display = "none";
+  }
+}

@@ -71,7 +71,7 @@ nav a:hover {
 /* main body */
 
 #intro {
-  background:url(http://res.cloudinary.com/fstep/image/upload/v1512564102/background/Waves3_vu1txq.jpg);
+  background: url('../assets/surf.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 30%;
@@ -192,36 +192,50 @@ height: auto;
 }
 /*skills*/
 #skills {
-  background:url(http://res.cloudinary.com/fstep/image/upload/v1512564102/background/Waves3_vu1txq.jpg);
+  background: url('../assets/surf.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 30%;
   min-height: 300px;
-  height: 40vh;
+  grid-auto-rows: minmax(300px, auto);
   background-attachment: fixed;
 }
+
 #skills h2 {
   color: black;
 }
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  margin: 10vh auto;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 10vh;
   width: 100%;
   text-align: center;
   color: #111;
 }
 .skills-container i {
   text-align: center;
-
+  font-size: 5em;
+}
+@media(max-width: 1000px){
+  .skills-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media(max-width: 500px){
+  .skills-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* CONTACT FORM -------------------*/
+
 #contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
   max-width: 1000px;
-  margin: auto;
+  margin:  50px auto;
 
 }
 #contact-form p {
