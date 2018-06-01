@@ -1,0 +1,9 @@
+.shipping {
+  &__image {
+    border: solid 1px red;
+    width: 600px;
+    transform: scaleY(1);
+    background-size: cover;
+    background-image: url("http://res.cloudinary.com/fstep/image/upload/c_scale,q_auto,w_960/v1527784358/shippingdocuments_hnqbgq.jpg");
+  }
+}

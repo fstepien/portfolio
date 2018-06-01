@@ -1,0 +1,40 @@
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  margin: 0;
+  @include fontSize(26);
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: black;
+  font-weight: 700;
+  position: relative;
+  margin: 50px 0;
+
+  &::after {
+    content: "";
+    border-top: 1px solid black;
+    max-width: 250px;
+    width: 30vw;
+    position: absolute;
+    bottom: -25px;
+    right: 80%;
+  }
+}
+
+p {
+  @include fontSize(16);
+  line-height: 1.6;
+  letter-spacing: 1px;
+  z-index: 10;
+}

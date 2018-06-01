@@ -1,0 +1,44 @@
+.about {
+  &__wrap {
+    margin-top: 100px;
+    width: 80%;
+    background: #f4f8f9;
+    padding: 50px 0;
+    transition: all 1s ease;
+    position: relative;
+
+    &__photo {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      background-image: url("https://res.cloudinary.com/fstep/image/upload/q_auto/f_auto/c_scale,w_600/v1527859861/filip_at2dgk.jpg");
+      background-size: cover;
+      background-position: 50% 20%;
+      filter: grayscale(100%) brightness(1.18) contrast(100%);
+      width: 30vw;
+      max-width: 350px;
+      height: calc(10vh + 30vw);
+      max-height: 450px;
+      transform: translateX(50%);
+      transition: all 1s ease;
+      @media (max-width: 712px) {
+        transform: translateX(15%) translateY(-50%);
+      }
+    }
+    &__text {
+      width: 40vw;
+      margin-left: 20%;
+
+      // position: absolute;
+      transition: all 1s ease;
+      @media (max-width: 712px) {
+        margin-left: 10%;
+        width: 80%;
+      }
+    }
+    @media (max-width: 712px) {
+      width: 90%;
+      padding: 150px 0 50px 0;
+    }
+  }
+}

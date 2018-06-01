@@ -1,0 +1,187 @@
+.main-header {
+  color: #333;
+}
+
+nav {
+  padding: 0 1em;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul {
+  list-style: none;
+  padding: 0px;
+  position: fixed;
+}
+nav li {
+  display: inline;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 100%;
+  text-align: center;
+}
+nav li:nth-child(1) {
+  display: none;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+  @include fontSize(14);
+  text-transform: uppercase;
+}
+nav a:hover {
+  border-bottom: solid;
+  border-width: 1px;
+}
+@media (max-width: 600px) {
+  nav ul {
+    position: relative;
+    margin-top: 5px;
+    color: red;
+  }
+  nav li {
+    padding: 0.1em;
+    height: 1.5em;
+    display: block;
+    text-align: right;
+  }
+}
+
+.main-header {
+  background-image: linear-gradient(
+      to right,
+      hsla(0, 0%, 0%, 0.4),
+      hsla(0, 0%, 0%, 0.1)
+    ),
+    url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_4000/v1512564102/background/Waves3_vu1txq.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+  width: 100%;
+  min-height: 300px;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+  @media (max-width: 1921px) {
+    background-image: linear-gradient(
+        to right,
+        hsla(0, 0%, 0%, 0.4),
+        hsla(0, 0%, 0%, 0.1)
+      ),
+      url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_1920/v1512564102/background/Waves3_vu1txq.jpg");
+  }
+  @media (max-width: 960px) {
+    background-image: linear-gradient(
+        to right,
+        hsla(0, 0%, 0%, 0.4),
+        hsla(0, 0%, 0%, 0.1)
+      ),
+      url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_1200/v1512564102/background/Waves3_vu1txq.jpg");
+  }
+  @media (max-width: 1920), (min-height: 850px) {
+    background-image: linear-gradient(
+        to right,
+        hsla(0, 0%, 0%, 0.4),
+        hsla(0, 0%, 0%, 0.1)
+      ),
+      url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_1920/v1512564102/background/Waves3_vu1txq.jpg");
+  }
+  @media (max-width: 600px) {
+    background-image: linear-gradient(
+        to right,
+        hsla(0, 0%, 0%, 0.4),
+        hsla(0, 0%, 0%, 0.1)
+      ),
+      url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_960/v1512564102/background/Waves3_vu1txq.jpg");
+  }
+
+  &__name {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 90px 20px;
+    position: sticky;
+    top: 90px;
+    bottom: 95px;
+    @media (max-width: 712px) {
+      justify-content: left;
+    }
+
+    & h1 {
+      margin: 0 0 -10px 0;
+      text-align: left;
+      text-transform: uppercase;
+      color: white;
+      font-weight: 700;
+      filter: drop-shadow(0em 0em 0.8em rgba(63, 63, 63, 0.9));
+      @include fontSize(50);
+
+      letter-spacing: 0.5em;
+      @media (max-width: 712px) {
+        margin: 0;
+      }
+      @media (max-width: 436px) {
+        font-size: 11.5vw;
+      }
+    }
+
+    &__p {
+      margin: 0;
+      @include fontSize(16);
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      color: black;
+      position: relative;
+      text-align: left;
+      left: -210px;
+      top: 0px;
+      @media (max-width: 712px) {
+        position: static;
+        width: 100%;
+        left: 0;
+        top: 0px;
+        // color: black;
+        color: black;
+        text-shadow: (0em 0em 0.1em rgba(255, 255, 255, 0));
+      }
+    }
+  }
+  &__arrow {
+    width: 44px;
+    height: 55px;
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 22px);
+
+    &::after {
+      content: "";
+      border-right: solid white 2px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 2px;
+      height: 55px;
+      border-image-source: linear-gradient(transparent, rgb(255, 255, 255));
+      border-image-slice: 5;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      bottom: -2px;
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 8px solid white;
+      clear: both;
+    }
+  }
+}
