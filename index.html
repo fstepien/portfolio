@@ -1,4 +1,38 @@
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120222877-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-120222877-1');
+  </script>
+  <!-- Hi! This Page is made with Sass, if you would like to see the source code it is available at https://github.com/fstepien/portfolio  -->
+  <!-- 
+    I have not missed a day of coding in 2018, here are some personal projects that there was no room for in the portfolio:
+
+    + outdoorToronto - Vanilla JavaScript App, currently working on building an API for this project in node/express + mongodb/mongoose https://oto.filipstepien.com & https://github.com/fstepien/outdoorToronto-API
+
+    +  LCBO Last Call - currently in jQuery and would be a fun project to rebuild in React Native https://lastcall.filipstepien.com/
+
+    + PSD Conversion using floats not responsive https://craft.filipstepien.com/
+
+    + react-overdrive presentation built in React.js - build for HackerYou show and tell presentation only so it not responsive. http://www.overdrive.filipstepien.com/
+
+    + A website for my dog using the instagram api https://mikathewhippet.com/
+
+    + A titration calculator my FIRST vanilla javascript project https://titrationhelper.ca/
+   -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Filip Stepien, Web Dev | PMP" />
+  <meta name="twitter:image" content="https://meta.filipstepien.com/portfolio.index.jpg" />
+  <meta property='og:title' content='Filip Stepien, Web Dev | PMP' />
+  <meta property="og:type" content="website" />
+  <meta property='og:image' content='https://meta.filipstepien.com/portfolio.index.jpg' />
+  <meta property='og:description' content='Filip Stepien is a Toronto based web developer focused on building applications that solve problems. Currently working in JavaScript/React.'
+  />
+
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
   <title>Filip Stepien | Web Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
@@ -67,23 +101,216 @@
   </section>
   <section id="portfolio">
 
-    <!-- <article class="shipping wrap">
+    <article class="shelter portfolio__article">
 
-      <div class="shipping__image">
-        test teststst Lorem, ipsum dolor sit amet
+      <div class="portfolio__article__image shelter">
+
       </div>
+      <div class="portfolio__article__text">
+        <h2>Shelter Watch</h2>
+        <p>Shelter Watch is a React.js app part of a UX design project focusing on communication within the shelter network.
+          The home page maps Toronto shelter locations using react-google-maps, filters them based on City of Toronto Open
+          Data, and displays real-time shelter availability in text and graphical format using Chart.js. Operations and Admin
+          views allow staff to update availability and capacity respectively. See lessons learned for more details about
+          the project and data flow throughout the app and database.</p>
 
-    </article> -->
+        <a class="portfolio__link" href="http://shelter.filipstepien.com/" target="_blank">Live Link</a>
+        <a class="portfolio__link" href="https://github.com/fstepien/shelter/blob/master/README.md" target="_blank">Lessons Learned</a>
+        <div class="portfolio__skills">
+          <span class="portolio__skills__skill">React.js</span>
+          <span class="portolio__skills__skill">JavaScript</span>
+          <span class="portolio__skills__skill">ES6</span>
+          <span class="portolio__skills__skill">react-router</span>
+          <span class="portolio__skills__skill">react-google-maps</span>
+          <span class="portolio__skills__skill">Firebase Database</span>
+          <span class="portolio__skills__skill">Chart.js</span>
+          <span class="portolio__skills__skill">UX Implementation</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="portfolio__article makeup">
+
+      <div class="portfolio__article__image makeup">
+
+      </div>
+      <div class="portfolio__article__text">
+        <h2>Make Up A Gift</h2>
+        <p>Design a personal make up gift with this React.js app. Simply pick three categories and your budget, while behind
+          the scenes that app will fetch product data with batch API calls, verify product information, conduct currency
+          conversions, and ensure the sum of the products from each category is under budget. This team project relied on
+          planning, communication and problem solving. See the Project Plan for details on managing a slow API and sending
+          email from a front-end application using Firebase Functions.
+        </p>
+
+        <a class="portfolio__link" href="https://makeupagift.filipstepien.com/" target="_blank">Live Link</a>
+        <a class="portfolio__link" href="https://github.com/fstepien/make-up-a-gift/blob/master/README.md" target="_blank">Project Plan</a>
+        <div class="portfolio__skills">
+          <span class="portolio__skills__skill">React.js</span>
+          <span class="portolio__skills__skill">Firebase Functions</span>
+          <span class="portolio__skills__skill">SendGrid</span>
+          <span class="portolio__skills__skill">JavaScript</span>
+          <span class="portolio__skills__skill">ES6</span>
+          <span class="portolio__skills__skill">Styled Components</span>
+          <span class="portolio__skills__skill">API</span>
+          <span class="portolio__skills__skill">Wireframing</span>
+          <span class="portolio__skills__skill">Material Design</span>
+          <span class="portolio__skills__skill">Team Collaboration</span>
+          <span class="portolio__skills__skill">Git Workflow</span>
+          <span class="portolio__skills__skill">Visio</span>
+          <span class="portolio__skills__skill">Project Management</span>
+        </div>
+      </div>
+    </article>
+
+
+
+    <article class="portfolio__article scamper">
+
+      <div class="portfolio__article__image scamper">
+
+      </div>
+      <div class="portfolio__article__text">
+        <h2>Scamper</h2>
+        <p>A brainstorming tool built using jQuery and D3.js libraries. To meet the minimum viable product the app collects
+          and organized user ideas. Using rolling wave planning and a stretch goal of tree diagram visualization d3 data
+          management was applied. This was an upfront cost due to the nested object structure but paid off with a responsive
+          SVG graph. Brainstorming ideas are can be stored in local storage, printed or saved to PDF. The Lessons Learned
+          discuss keyboard accessibility and D3.js scaling.
+        </p>
+
+        <a class="portfolio__link" href="https://scamper.filipstepien.com/" target="_blank">Live Link</a>
+        <a class="portfolio__link" href="https://github.com/fstepien/scamper/blob/master/readme.md" target="_blank">Lessons Learned</a>
+        <div class="portfolio__skills">
+          <span class="portolio__skills__skill">jQuery</span>
+          <span class="portolio__skills__skill">D3.js</span>
+          <span class="portolio__skills__skill">Module Pattern</span>
+          <span class="portolio__skills__skill">Responsive Design</span>
+          <span class="portolio__skills__skill">Visualization</span>
+          <span class="portolio__skills__skill">SVG</span>
+          <span class="portolio__skills__skill">Data Structures</span>
+          <span class="portolio__skills__skill">JSON</span>
+          <span class="portolio__skills__skill">Local Storage</span>
+          <span class="portolio__skills__skill">ES6</span>
+          <span class="portolio__skills__skill">a11y</span>
+        </div>
+      </div>
+    </article>
+    <article class="portfolio__article maxshop">
+
+      <div class="portfolio__article__image maxshop">
+
+      </div>
+      <div class="portfolio__article__text">
+        <h2>Maxshop</h2>
+        <p>A modern e-commerce site converted from PSD using a combination of CSS grid and flexbox to create a detailed responsive
+          design. This project focuses on exploring new css tools to write dry code by reducing media queries, as well as
+          creating drop downs and UI components without reaching for JavaScript. The style sheets are organized using BEM,
+          and written using Sass preprocessor. Read lessons learned for details on cross browser testing including different
+          css grid standard implementations.
+        </p>
+
+        <a class="portfolio__link" href="https://maxshop.filipstepien.com/" target="_blank">Live Link</a>
+        <a class="portfolio__link" href="https://github.com/fstepien/2018_SpringBootcamp_Project2/blob/master/readme.md" target="_blank">Lessons Learned</a>
+        <div class="portfolio__skills">
+          <span class="portolio__skills__skill">HTML</span>
+          <span class="portolio__skills__skill">CSS</span>
+          <span class="portolio__skills__skill">Sass</span>
+          <span class="portolio__skills__skill">BEM</span>
+          <span class="portolio__skills__skill">CSS Grid</span>
+          <span class="portolio__skills__skill">Flexbox</span>
+          <span class="portolio__skills__skill">Responsive Design</span>
+          <span class="portolio__skills__skill">Overlap Layout</span>
+          <span class="portolio__skills__skill">UI</span>
+          <span class="portolio__skills__skill">Browser Testing</span>
+        </div>
+      </div>
+    </article>
+    <article class="portfolio__article shipping">
+
+      <div class="portfolio__article__image shipping">
+
+      </div>
+      <div class="portfolio__article__text">
+        <h2>Shipping Documents</h2>
+        <p>This React.js app generates Bill of Lading, a shipping document required by Transport Canada for all dangerous goods
+          being transported. ERP software that usually generates this document, can be time consuming to configure and difficult
+          to customize. I wanted to solve this problem by creating an app that can be used in both emergency situations and
+          for shipping one time items. Firebase Database and Authentication is used to securely store product information,
+          and CSS Grid is used to create the form that can be filled out on desktop or mobile.
+        </p>
+
+        <a class="portfolio__link" href="https://shippingdocuments.ca/" target="_blank">Live Link</a>
+        <a class="portfolio__link" href="https://github.com/fstepien/ShippingDocuments.ca/blob/master/README.md" target="_blank">Github</a>
+        <div class="portfolio__skills">
+          <span class="portolio__skills__skill">React.js</span>
+          <span class="portolio__skills__skill">Firebase Database</span>
+          <span class="portolio__skills__skill">Firebase Authentication</span>
+          <span class="portolio__skills__skill">JSX</span>
+          <span class="portolio__skills__skill">react-router</span>
+          <span class="portolio__skills__skill">.createRef()</span>
+          <span class="portolio__skills__skill">Callbacks</span>
+          <span class="portolio__skills__skill">CSS Grid</span>
+          <span class="portolio__skills__skill">mousemove Events</span>
+
+        </div>
+      </div>
+    </article>
   </section>
 
   <section id="Skills">
 
   </section>
 
-  <section id="contact">
+  <section id="contact" class="contact">
+    <div class="contact__wrap clearfix">
+      <div class="contact__wrap__form-wrap">
+        <h2>Contact Me</h2>
+        <p class="alert">Message has been sent</p>
+        <p class="contact__wrap__form-wrap__intro">You can email me at
+          <a href="mailto:contact@filipstepien.com">contact@filipstepien.com</a>
+        </p>
+        <form id="contact-form" class="contact__wrap__form-wrap__form clearfix">
 
+          <label for="name" class="visuallyhidden">YOUR Name</label>
+          <input type="text" name="name" id="name" placeholder="YOUR NAME" required>
+
+          <label for="email" class="visuallyhidden">YOUR Email</label>
+          <input type="email" name="email" id="email" placeholder="YOUR EMAIL" required>
+
+          <label for="message" class="visuallyhidden">YOUR Message</label>
+          <textarea type="text" name="message" id="message" rows="3" placeholder="YOUR MESSAGE"></textarea>
+
+          <input type="submit" value="Send">
+        </form>
+
+
+      </div>
+      <div class="contact__wrap__social-wrap">
+        <h3>SOCIAL</h3>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/filipstepien/" target="_blank">linkedin</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Filip_Stepien" target="_blank">twitter</a>
+          </li>
+          <li>
+            <a href="https://medium.com/@filip.stepien" target="_blank">medium</a>
+          </li>
+          <li>
+            <a href="https://trailhead.salesforce.com/en/me/00550000006xv5EAAQ" target="_blank">trailhead</a>
+          </li>
+          <li>
+            <a href="https://github.com/fstepien" target="_blank">github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
+
   <footer class="main-footer">
 
   </footer>
+  <script src="scripts/app.js"></script>
 </body>

@@ -1,9 +1,148 @@
-.shipping {
-  &__image {
-    border: solid 1px red;
-    width: 600px;
-    transform: scaleY(1);
-    background-size: cover;
-    background-image: url("http://res.cloudinary.com/fstep/image/upload/c_scale,q_auto,w_960/v1527784358/shippingdocuments_hnqbgq.jpg");
+.portfolio {
+  &__article {
+    margin: 100px auto 0 20%;
+    //********* clear with @supports ******
+    width: 50%;
+    @media (max-width: 900px) {
+      width: 60%;
+      margin: 100px auto 0 auto;
+      width: 80%;
+    }
+    @media (min-width: 900px) {
+      &:nth-child(even) {
+        text-align: right;
+        margin: 100px 20% 0 auto;
+        &__image {
+          text-align: center;
+          margin: 100px 0 0 auto;
+          &::after {
+            transform: translateX(calc(100% + 4px)) translateY(-28px);
+          }
+        }
+      }
+    }
+    &__image {
+      position: relative;
+      width: 39vw;
+      height: 26vw;
+      margin: 0;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(100);
+      // transition: all 0.2s ease;
+      border: 4px black solid;
+      z-index: 5;
+      //********* clear with @supports ******
+
+      @media (max-width: 900px) {
+        margin: 0 auto;
+        width: 78vw;
+        height: 52vw;
+      }
+      &::after {
+        content: "      \25CF  \25CF  \25CF";
+        padding-left: 10px;
+        font-size: 14px;
+        height: 20px;
+        width: calc(100% - 10px);
+        position: absolute;
+        border: solid 4px black;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        transform: translateX(-4px) translateY(-28px);
+        z-index: 1;
+        left: 0;
+        text-align: left;
+      }
+
+      &.shelter {
+        background-image: url("../assets/portfolio.shelter.top.png");
+      }
+      &:hover.shelter {
+        background-image: url("../assets/portfolio.shelter.back.gif");
+        filter: grayscale(0);
+        background-position: center bottom;
+      }
+      &.makeup {
+        background-image: url("../assets/portfolio.makeup.top.png");
+      }
+      &:hover.makeup {
+        background-image: url("../assets/portfolio.makeup.back.png");
+        filter: grayscale(0);
+        background-repeat: no-repeat;
+        background-size: 95% 95%, contain;
+        background-position: center center;
+      }
+      &.scamper {
+        background-image: url("../assets/portfolio.scamper.top.png");
+        background-size: contain;
+      }
+      &:hover.scamper {
+        background-image: url("../assets/portfolio.scamper.back.gif");
+        filter: grayscale(0);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+      &.maxshop {
+        background-image: url("../assets/portfolio.maxshop.top.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      &:hover.maxshop {
+        background-image: url("../assets/portfolio.maxshop.back.gif");
+        filter: grayscale(0);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+      }
+      &.shipping {
+        background-image: url("../assets/portfolio.shipping.top.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:hover.shipping {
+        background-image: url("../assets/portfolio.shipping.back.jpg");
+        filter: grayscale(0);
+        background-repeat: no-repeat;
+        background-size: 105%, cover;
+        background-position: 63% 0%;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-transform: uppercase;
+    @include fontSize(20);
+    text-decoration: none;
+    letter-spacing: 1px;
+    border: 4px solid black;
+    padding: 8px 16px;
+    margin: 14px 10px 10px 0;
+    color: white;
+    background: black;
+    transition: all 0.6s ease;
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+
+    &:hover {
+      color: black;
+      background: white;
+    }
+  }
+
+  &__skills {
+    margin: 0;
+    & span {
+      display: inline-block;
+      @include fontSize(16);
+      letter-spacing: 1px;
+      line-height: 20px;
+      border: 1px solid black;
+      padding: 5px 10px;
+      margin: 0 10px 10px 0;
+    }
   }
 }

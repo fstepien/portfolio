@@ -1,5 +1,7 @@
-Portfolio Page
+Portfolio
 ==============
-Originally a FreeCodeCamp Project that will evolve into my actual portfolio page.
-* HTML/CSS
-* JavaScript to submit form to Firebase
+
+[https://www.filipstepien.com](https://filipstepien.com)
+
+
+![](https://meta.filipstepien.com/portfolio.notes.jpg)

@@ -25,14 +25,18 @@ h2 {
     content: "";
     border-top: 1px solid black;
     max-width: 250px;
-    width: 30vw;
+    width: 20vw;
+    min-width: 100px;
     position: absolute;
     bottom: -25px;
-    right: 80%;
+    right: calc(100% - 100px);
   }
 }
 
-p {
+p,
+input,
+label,
+textarea {
   @include fontSize(16);
   line-height: 1.6;
   letter-spacing: 1px;
