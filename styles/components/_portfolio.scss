@@ -1,26 +1,24 @@
 .portfolio {
+  &__title {
+    margin: 0 auto 0 16%;
+    @media (max-width: 900px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    display: none;
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
   &__article {
-    margin: 100px auto 0 20%;
+    margin: 100px auto 0 16%;
     //********* clear with @supports ******
     width: 50%;
     @media (max-width: 900px) {
-      width: 60%;
       margin: 100px auto 0 auto;
       width: 80%;
     }
-    @media (min-width: 900px) {
-      &:nth-child(even) {
-        text-align: right;
-        margin: 100px 20% 0 auto;
-        &__image {
-          text-align: center;
-          margin: 100px 0 0 auto;
-          &::after {
-            transform: translateX(calc(100% + 4px)) translateY(-28px);
-          }
-        }
-      }
-    }
+
     &__image {
       position: relative;
       width: 39vw;
@@ -53,6 +51,8 @@
         z-index: 1;
         left: 0;
         text-align: left;
+        color: black;
+        text-decoration: none;
       }
 
       &.shelter {
@@ -109,6 +109,36 @@
         background-position: 63% 0%;
       }
     }
+    ////////////////////////////////////////////////////////////////////
+    //////////////     GRID LAYOUT OVER FALLBACK     ///////////////////
+    ////////////////////////////////////////////////////////////////////
+    @supports (display: grid) {
+      @media (min-width: 1200px) {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: calc(16vw - 40px) 38vw 30vw calc(16vw - 40px);
+        margin: 100px 0;
+        & a {
+          grid-column: 3/4;
+          order: 2;
+          justify-self: end;
+        }
+        &__image {
+          width: 30vw;
+          max-width: 480px;
+          height: 20vw;
+          max-height: 320px;
+          // margin-top: calc(20rem - 10vw);
+          margin-top: 50px;
+        }
+        &__text {
+          grid-column: 2/3;
+          order: 1;
+        }
+      }
+    }
   }
 
   &__link {
@@ -143,6 +173,11 @@
       border: 1px solid black;
       padding: 5px 10px;
       margin: 0 10px 10px 0;
+    }
+    @supports (display: grid) {
+      @media (min-width: 1200px) {
+        width: calc(68vw + 20px);
+      }
     }
   }
 }

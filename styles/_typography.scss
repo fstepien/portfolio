@@ -16,6 +16,7 @@ h2 {
   @include fontSize(26);
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  line-height: 1.6;
   color: black;
   font-weight: 700;
   position: relative;
@@ -41,4 +42,5 @@ textarea {
   line-height: 1.6;
   letter-spacing: 1px;
   z-index: 10;
+  text-rendering: optimizeLegibility;
 }

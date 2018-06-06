@@ -17,7 +17,7 @@
 
     + PSD Conversion using floats not responsive https://craft.filipstepien.com/
 
-    + react-overdrive presentation built in React.js - build for HackerYou show and tell presentation only so it not responsive. http://www.overdrive.filipstepien.com/
+    + react-overdrive presentation built in React.js - build for HackerYou show and tell presentation only so it not responsive. https://www.overdrive.filipstepien.com/
 
     + A website for my dog using the instagram api https://mikathewhippet.com/
 
@@ -33,10 +33,11 @@
   />
 
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
-  <title>Filip Stepien | Web Developer</title>
+  <title>Filip Stepien | Web Developer | PMP</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="shortcut icon" type="image/png" href="assets/icon.ng" />
+  <link rel="stylesheet" href="styles/icons/font-mfizz.css">
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.ico" />
   <meta name="viewport" content="width=device-width" />
 </head>
 
@@ -51,13 +52,13 @@
           <a href="#intro">Home</a>
         </li>
         <li>
-          <a href="#About">About</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <a href="#portfolio">MY WORK</a>
         </li>
         <li>
-          <a href="#Skills">Skills</a>
+          <a href="#skills">Skills</a>
         </li>
         <li>
           <a href="#contact">Contact</a>
@@ -78,6 +79,7 @@
     </a>
   </header>
   <section id="about" class="about clearfix">
+
     <div class="about__wrap clearfix">
 
       <div class="about__wrap__photo">
@@ -86,26 +88,39 @@
       </div>
       <div class="about__wrap__text">
         <h2>About Me</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum a provident et perferendis minus! Maiores veritatis
-          inventore soluta nobis quos voluptates optio impedit facilis tenetur, ducimus necessitatibus quo debitis non quis
-          eligendi modi distinctio esse a? Amet mollitia ullam nisi temporibus aliquid architecto cum esse! Obcaecati minus
-          quo iste consequuntur consectetur debitis asperiores inventore quos nam iure aliquid officiis veniam amet voluptas.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum a provident et perferendis minus! Maiores veritatis
-          inventore soluta nobis quos voluptates optio impedit facilis tenetur, ducimus necessitatibus quo debitis non quis
-          eligendi modi distinctio esse a? Amet mollitia ullam nisi temporibus aliquid architecto cum esse! Obcaecati minus
-          quo iste consequuntur consectetur debitis asperiores inventore quos nam iure aliquid officiis veniam amet voluptas.</p>
+        <p>
+          I am a Toronto based web developer focused on building applications that solve problems. Currently working in JavaScript/React,
+          and learning each day by adding a new library or functionality to every project I build. I enjoy the process of
+          mapping web dataflow, working on clear modern designs and building in accessibility. </p>
+        <p>Before falling in love with coding, I worked in the chemical manufacturing industry as a PM, optimizing processes
+          using lean six sigma and working with multidisciplinary teams to deliver integrated customer solutions. I am now
+          applying these experiences while working in web development: I believe that communication with stakeholders and
+          internal team is the foundation that builds great products, and that collaboration of business analysts, designers
+          and developers from project initiation allows teams to reach strategic objectives faster. This approach is documented
+          in project plans and lessons learned in my work below.
+
+        </p>
+        <p>I have just finished the web immersive program at HackerYou and looking to a join a team as a web developer. You
+          can message me at
+          <a href="mailto:contact@filipstepien.com">contact@filipstepien.com</a>, I would love to discuss how I can add value to your company.
+        </p>
 
       </div>
     </div>
 
   </section>
   <section id="portfolio">
+    <div class="portfolio__title">
+
+      <h2>My WORK</h2>
+    </div>
 
     <article class="shelter portfolio__article">
+      <a href="https://shelter.filipstepien.com/" target="_blank">
+        <div class="portfolio__article__image shelter">
 
-      <div class="portfolio__article__image shelter">
-
-      </div>
+        </div>
+      </a>
       <div class="portfolio__article__text">
         <h2>Shelter Watch</h2>
         <p>Shelter Watch is a React.js app part of a UX design project focusing on communication within the shelter network.
@@ -114,7 +129,7 @@
           views allow staff to update availability and capacity respectively. See lessons learned for more details about
           the project and data flow throughout the app and database.</p>
 
-        <a class="portfolio__link" href="http://shelter.filipstepien.com/" target="_blank">Live Link</a>
+        <a class="portfolio__link" href="https://shelter.filipstepien.com/" target="_blank">Live Link</a>
         <a class="portfolio__link" href="https://github.com/fstepien/shelter/blob/master/README.md" target="_blank">Lessons Learned</a>
         <div class="portfolio__skills">
           <span class="portolio__skills__skill">React.js</span>
@@ -130,10 +145,11 @@
     </article>
 
     <article class="portfolio__article makeup">
+      <a href="https://makeupagift.filipstepien.com/" target="_blank">
+        <div class="portfolio__article__image makeup">
 
-      <div class="portfolio__article__image makeup">
-
-      </div>
+        </div>
+      </a>
       <div class="portfolio__article__text">
         <h2>Make Up A Gift</h2>
         <p>Design a personal make up gift with this React.js app. Simply pick three categories and your budget, while behind
@@ -166,10 +182,11 @@
 
 
     <article class="portfolio__article scamper">
+      <a href="https://scamper.filipstepien.com/" target="_blank">
+        <div class="portfolio__article__image scamper">
 
-      <div class="portfolio__article__image scamper">
-
-      </div>
+        </div>
+      </a>
       <div class="portfolio__article__text">
         <h2>Scamper</h2>
         <p>A brainstorming tool built using jQuery and D3.js libraries. To meet the minimum viable product the app collects
@@ -183,7 +200,8 @@
         <a class="portfolio__link" href="https://github.com/fstepien/scamper/blob/master/readme.md" target="_blank">Lessons Learned</a>
         <div class="portfolio__skills">
           <span class="portolio__skills__skill">jQuery</span>
-          <span class="portolio__skills__skill">D3.js</span>
+          <span class @media (min-width: 900px) { &:nth-of-type(even) { background: red; text-align: right; margin: 100px 20% 0 auto;
+            &__image { &::after { transform: translateX(calc(100% + 4px)) translateY(-28px); } } } }="portolio__skills__skill">D3.js</span>
           <span class="portolio__skills__skill">Module Pattern</span>
           <span class="portolio__skills__skill">Responsive Design</span>
           <span class="portolio__skills__skill">Visualization</span>
@@ -197,10 +215,11 @@
       </div>
     </article>
     <article class="portfolio__article maxshop">
+      <a href="https://maxshop.filipstepien.com/" target="_blank">
+        <div class="portfolio__article__image maxshop">
 
-      <div class="portfolio__article__image maxshop">
-
-      </div>
+        </div>
+      </a>
       <div class="portfolio__article__text">
         <h2>Maxshop</h2>
         <p>A modern e-commerce site converted from PSD using a combination of CSS grid and flexbox to create a detailed responsive
@@ -227,17 +246,18 @@
       </div>
     </article>
     <article class="portfolio__article shipping">
+      <a href="https://shippingdocuments.ca/" target="_blank">
+        <div class="portfolio__article__image shipping">
 
-      <div class="portfolio__article__image shipping">
-
-      </div>
+        </div>
+      </a>
       <div class="portfolio__article__text">
         <h2>Shipping Documents</h2>
         <p>This React.js app generates Bill of Lading, a shipping document required by Transport Canada for all dangerous goods
           being transported. ERP software that usually generates this document, can be time consuming to configure and difficult
           to customize. I wanted to solve this problem by creating an app that can be used in both emergency situations and
           for shipping one time items. Firebase Database and Authentication is used to securely store product information,
-          and CSS Grid is used to create the form that can be filled out on desktop or mobile.
+          and CSS Grid is used to create the form that can be filled out and printed from desktop or mobile.
         </p>
 
         <a class="portfolio__link" href="https://shippingdocuments.ca/" target="_blank">Live Link</a>
@@ -258,8 +278,39 @@
     </article>
   </section>
 
-  <section id="Skills">
+  <section id="skills" class="skills">
+    <div class="skills__wrapper">
+      <h2>I HAVE BUILT PROJECTS WITH</h2>
+      <div class="skills__wrapper__icons">
 
+        <i class="icon-css3-alt" title="CSS"></i>
+        <i class="icon-d3" title="D3.js"></i>
+        <i class="icon-firebase" title="Firebase">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 256 351" enable-background="new 0 0 256 351" xml:space="preserve">
+            <path d="M0,282.998l2.123-2.973L102.527,89.512l0.212-2.017L58.479,4.358c-3.708-6.964-14.148-5.204-15.365,2.592
+          	L0,282.998z" />
+            <path d="M135.005,150.381l32.955-33.751l-32.964-62.93c-3.13-5.957-11.867-5.974-14.963,0l-17.612,33.589v2.861
+          	L135.005,150.381z" />
+            <path d="M139.121,347.551l116.275-64.848L222.191,78.209c-1.039-6.398-8.888-8.928-13.467-4.34L0,282.998
+          	l115.608,64.547C122.915,351.625,131.812,351.627,139.121,347.551" />
+          </svg>
+
+        </i>
+        <i class="icon-git" title="Git"></i>
+        <i class="icon-gulp" title="Gulp"></i>
+        <i class="icon-html5-alt" title="HTML"></i>
+        <i class="icon-javascript-alt" title="JavaScript"></i>
+        <i class="icon-jquery" title="jQuery"></i>
+        <!-- <i class="icon-mobile-device"></i> -->
+        <i class="icon-mongodb" title="mongoDB"></i>
+        <i class="icon-reactjs" title="React"></i>
+        <i class="icon-sass" title="Sass"></i>
+        <i class="icon-svg" title="SVG"></i>
+      </div>
+      <!-- <h2>I AM LEARNING</h2>
+      <i class=".icon-mongodb"></i>
+    </div> -->
   </section>
 
   <section id="contact" class="contact">
@@ -309,8 +360,5 @@
     </div>
   </section>
 
-  <footer class="main-footer">
-
-  </footer>
   <script src="scripts/app.js"></script>
 </body>
