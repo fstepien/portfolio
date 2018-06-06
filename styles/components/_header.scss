@@ -1,3 +1,16 @@
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: black;
+  color: white;
+  @include fontSize(20);
+}
+.skip-link:focus {
+  left: 0;
+}
+
 .main-header {
   color: #333;
 }
@@ -18,7 +31,6 @@ nav ul {
   transition: right ease 0.3s;
   @media (max-width: 964px) {
     right: 10%;
-    display: none;
   }
 }
 nav li {
@@ -28,6 +40,14 @@ nav li {
   height: 100%;
   text-align: center;
   // margin-bottom: 1rem;
+  @media (max-width: 964px) {
+    font-size: 16px;
+
+    &:not(:last-of-type) {
+      right: 10%;
+      display: none;
+    }
+  }
 }
 nav li:nth-child(1) {
   display: none;
@@ -82,6 +102,15 @@ nav a:hover {
       url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_1920/v1512564102/background/Waves3_vu1txq.jpg");
   }
   @media (max-width: 960px) {
+    background-image: linear-gradient(
+        to right,
+        hsla(0, 0%, 0%, 0.4),
+        hsla(0, 0%, 0%, 0.1)
+      ),
+      url("https://res.cloudinary.com/fstep/image/upload/f_auto/q_auto/c_scale,w_1200/v1512564102/background/Waves3_vu1txq.jpg");
+  }
+  @media (max-width: 960px), (max-height: 600px) {
+    background-attachment: scroll;
     background-image: linear-gradient(
         to right,
         hsla(0, 0%, 0%, 0.4),
@@ -200,6 +229,8 @@ nav a:hover {
       &::after {
         height: 30px;
       }
+    }
+    @media (max-width: 960px), (max-height: 600px) {
     }
   }
 }

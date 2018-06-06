@@ -42,6 +42,7 @@
 </head>
 
 <body>
+  <a href="#about" class="skip-link">Skip to main content.</a>
   <header class="main-header">
 
 
@@ -317,7 +318,7 @@
     <div class="contact__wrap clearfix">
       <div class="contact__wrap__form-wrap">
         <h2>Contact Me</h2>
-        <p class="alert">Message has been sent</p>
+
         <p class="contact__wrap__form-wrap__intro">You can email me at
           <a href="mailto:contact@filipstepien.com">contact@filipstepien.com</a>
         </p>
@@ -332,7 +333,8 @@
           <label for="message" class="visuallyhidden">YOUR Message</label>
           <textarea type="text" name="message" id="message" rows="3" placeholder="YOUR MESSAGE"></textarea>
 
-          <input type="submit" value="Send">
+          <input type="submit" value="Send" aria-label="Submit Contact Form">
+          <p class="alert">Message has been sent</p>
         </form>
 
 
