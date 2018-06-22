@@ -565,6 +565,16 @@ nav a:hover {
       background-repeat: no-repeat;
       background-size: 95% 95%, contain;
       background-position: center center; }
+    .portfolio__article__image.pitchblack {
+      background-image: url("../assets/portfolio.pitchblack.top.png");
+      background-position: left top; }
+    .portfolio__article__image:hover.pitchblack {
+      background-image: url("../assets/portfolio.pitchblack.back.png");
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left top; }
     .portfolio__article__image.scamper {
       background-image: url("../assets/portfolio.scamper.top.png");
       background-size: contain; }
